@@ -1,0 +1,6 @@
+name = "Steel"
+license = "MIT Licence"
+description = "Компактная тема Hugo для многоязычного персонального блога."
+
+[author]
+  name = "DaVINCI.s23"

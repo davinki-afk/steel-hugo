@@ -1,0 +1,2 @@
+{{- $monthKey := printf "month_%d" .Month -}}
+{{- printf "%d %s %d" .Day (i18n $monthKey) .Year -}}

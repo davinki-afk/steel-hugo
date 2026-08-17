@@ -1,0 +1,53 @@
+baseURL = "https://example.org/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+title = "Steel"
+theme = "Steel"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[languages]
+  [languages.en]
+    locale = "en-US"
+    label = "English"
+    weight = 2
+    [languages.en.params]
+      subtitle = "A tabular, compact theme for Hugo."
+      copyright = "Name and surname; all rights reserved, subject to the first amendment to the agreement."
+
+    [[languages.en.menus.main]]
+      name = "Home"
+      pageRef = "/"
+      weight = 10
+    [[languages.en.menus.main]]
+      name = "Blog"
+      pageRef = "/blog"
+      weight = 20
+    
+    [[languages.en.params.footerColumns]]
+    title = "First column"
+    [[languages.en.params.footerColumns.links]]
+      name = "Link"
+      url = "/blog/"
+    [[languages.en.params.footerColumns]]
+    title = "Second column"
+    [[languages.en.params.footerColumns.links]]
+      name = "Link"
+      url = "/blog/"
+    [[languages.en.params.footerColumns]]
+    title = "Third column"
+    [[languages.en.params.footerColumns.links]]
+      name = "Link"
+      url = "/blog/"  
+
+[markup]
+  [markup.highlight]
+    style = 'xcode'
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

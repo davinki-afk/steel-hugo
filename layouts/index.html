@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <table class="content-layout" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td class="article-cell" width="565" valign="top">
+      {{ .Content }}
+    </td>
+    <td class="sidebar-spacer" width="6">&nbsp;</td>
+    <td class="sidebar-cell" width="189" valign="top">{{ partial "sidebar.html" . }}</td>
+    </tr>
+  </table>
+{{ end }}

@@ -1,0 +1,94 @@
+/* Deliberately conservative CSS: compatible with Internet Explorer 6. */
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: Tahoma, Arial, sans-serif, "Franklin Gothic Medium";
+  font-size: 14px;
+}
+
+table.site {
+  width: 760px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table.site-header {
+  width: 100%;
+  height: 53px;
+  background: steelblue;
+  color: #ffffff;
+  line-height: 1;
+}
+
+td.brand { padding: 10px 12px; }
+td.main-menu { padding: 10px 12px; white-space: nowrap; font-size: 14px; }
+.site-title { color: #ffffff; font-size: 18px; font-weight: bold; text-decoration: none; }
+.site-subtitle { margin: 0; font-size: 12px; }
+.main-menu a { color: #ffffff; text-decoration: none; }
+.main-menu a:hover, a:hover { text-decoration: underline; }
+
+table.content-layout {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+li {
+  line-height:1;
+}
+
+td.article-cell { width: 565px; padding: 0; }
+td.sidebar-spacer { width: 6px; font-size: 1px; }
+td.sidebar-cell { width: 189px; padding: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1 { font-size: 28px; line-height: 1; }
+h2 { font-size: 22px; line-height: 1; }
+.byline { margin: 0; line-height: 1; }
+hr { height: 1px; margin: 7px 0; border: 0; border-top: 1px solid #a7a7a7; }
+.article-cell p, .post-summary p { margin: 0 0 12px; line-height: 1; }
+.article-cell a, .post-summary a { color: #000000; }
+pre {
+  width: 100%;
+  white-space: normal;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+pre code, code { word-wrap: break-word; }
+table.post-summary { width: 100%; margin: 0 0 18px; border-collapse: collapse; }
+.post-summary h2 { font-size: 22px; }
+p.byline { margin: 0; margin-top:4px; }
+p.post-description { margin: 4px 0 0; line-height: 1; }
+p.post-taxonomy { margin: 12px 0 0; color: gray; font-size: 12px; line-height: 1; }
+p.post-categories { margin-top: 0px; }
+.post-taxonomy a { color: gray; }
+
+table.sidebar-widget {
+  width: 189px;
+  margin: 0 0 10px 0;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+td.sidebar-title { padding: 5px; background: dimgray; color: #ffffff; font-weight: bold; line-height: 13px; }
+td.sidebar-content { padding: 5px; background: lightgray; }
+.sidebar-widget-tags td.sidebar-title { background: seagreen; }
+.sidebar-widget-tags td.sidebar-content { background: lightgreen; }
+.sidebar-widget-categories td.sidebar-title { background: mediumpurple; }
+.sidebar-widget-categories td.sidebar-content { background: lavender; }
+.sidebar-empty, .taxonomy-links { margin: 0; line-height: 16px; }
+.taxonomy-links a { color: #000000; text-decoration: none; }
+.taxonomy-links a:hover { text-decoration: underline; }
+
+table.site-footer {
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #a7a7a7;
+  border-collapse: collapse;
+}
+tr.footer-columns td { width: 33%; padding-top: 11px; vertical-align: top; }
+.footer-columns h2 { font-size: 12px; line-height: 1; }
+.footer-columns ul { margin: 2px 0 0; padding-left: 20px; }
+.footer-columns li { font-size: 14px; line-height: 17px; }
+.footer-columns a { color: #000000; text-decoration: none; }
+td.copyright { padding-top: 5px; padding-bottom: 5px; color: gray; font-size: 12px; text-align: center; }

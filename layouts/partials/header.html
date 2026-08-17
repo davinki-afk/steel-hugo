@@ -1,0 +1,13 @@
+<table class="site-header" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+  <td class="brand" valign="middle">
+    <a class="site-title" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    {{ with site.Params.subtitle }}<p class="site-subtitle">{{ . }}</p>{{ end }}
+  </td>
+  {{ with site.Menus.main }}
+    <td class="main-menu" align="right" valign="middle">
+      {{ range $index, $item := . }}{{ if $index }} / {{ end }}<a href="{{ $item.URL }}">{{ $item.Name }}</a>{{ end }}
+    </td>
+  {{ end }}
+  </tr>
+</table>

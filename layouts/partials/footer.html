@@ -1,0 +1,15 @@
+<table class="site-footer" cellpadding="0" cellspacing="0" border="0">
+  <tr class="footer-columns">
+    {{ range site.Params.footerColumns }}
+      <td valign="top">
+        <h2>{{ .title }}</h2>
+        <ul>{{ range .links }}<li><a href="{{ .url }}">{{ .name }}</a></li>{{ end }}</ul>
+      </td>
+    {{ else }}
+      <td valign="top"><h2>First column</h2><ul><li>Fisrt link</li><li>Second link</li><li>Third link</li></ul></td>
+      <td valign="top"><h2>Second column</h2><ul><li>Fisrt link</li><li>Second link</li><li>Third link</li></ul></td>
+      <td valign="top"><h2>Third column</h2><ul><li>Fisrt link</li><li>Second link</li><li>Third link</li></ul></td>
+    {{ end }}
+  </tr>
+  {{ with site.Params.copyright }}<tr><td class="copyright" colspan="3">{{ . }}</td></tr>{{ end }}
+</table>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <table class="content-layout" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td class="article-cell" width="565" valign="top">
+      <h1>{{ if .IsHome }}{{ i18n "latest_posts" }}{{ else }}{{ .Title }}{{ end }}</h1>
+      <hr>
+      {{ range .Pages }}
+        <table class="post-summary" cellpadding="0" cellspacing="0" border="0"><tr><td>
+          <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          {{ with .Date }}<p class="byline">{{ partial "date.html" . }}</p>{{ end }}
+          {{ with .Params.description }}<p class="post-description">{{ . }}</p>{{ end }}
+        </td></tr></table>
+      {{ else }}
+        <p>{{ i18n "no_posts" }}</p>
+      {{ end }}
+    </td>
+    <td class="sidebar-spacer" width="6">&nbsp;</td>
+    <td class="sidebar-cell" width="189" valign="top">{{ partial "sidebar.html" . }}</td>
+    </tr>
+  </table>
+{{ end }}

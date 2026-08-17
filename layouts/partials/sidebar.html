@@ -1,0 +1,21 @@
+<table class="sidebar-widget sidebar-widget-tags" cellpadding="0" cellspacing="0" border="0">
+  <tr><td class="sidebar-title">{{ i18n "tags" }}</td></tr>
+  <tr><td class="sidebar-content">
+    {{ with site.Taxonomies.tags }}
+      <p class="taxonomy-links">{{ range $index, $tag := .ByCount }}{{ if $index }} · {{ end }}<a href="{{ $tag.Page.RelPermalink }}">{{ $tag.Page.LinkTitle }}</a> ({{ $tag.Count }}){{ end }}</p>
+    {{ else }}
+      <p class="sidebar-empty">{{ i18n "no_tags" }}</p>
+    {{ end }}
+</td></tr>
+</table>
+
+<table class="sidebar-widget sidebar-widget-categories" cellpadding="0" cellspacing="0" border="0">
+  <tr><td class="sidebar-title">{{ i18n "categories" }}</td></tr>
+  <tr><td class="sidebar-content">
+    {{ with site.Taxonomies.categories }}
+      <p class="taxonomy-links">{{ range $index, $category := .ByCount }}{{ if $index }} · {{ end }}<a href="{{ $category.Page.RelPermalink }}">{{ $category.Page.LinkTitle }}</a> ({{ $category.Count }}){{ end }}</p>
+    {{ else }}
+      <p class="sidebar-empty">{{ i18n "no_categories" }}</p>
+    {{ end }}
+  </td></tr>
+</table>
