@@ -8,4 +8,4 @@ A compact theme with a tabular layout, designed to fit more text on the screen.
 - Easy-to-modify theme
 
 ## Installation
-Simply copy this repository and unpack it into your Hugo site.
+Download the theme, create a folder named "Steel", and copy the contents of "exampleSite" to the root of your site.
