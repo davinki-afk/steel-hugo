@@ -12,6 +12,7 @@ theme = "Steel"
   [languages.en]
     weight = 2
     [languages.en.params]
+      locale = "en-US"
       label = "English"
       subtitle = "A tabular, compact theme for Hugo."
       copyright = "Name and surname; all rights reserved, subject to the first amendment to the agreement."
