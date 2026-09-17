@@ -15,6 +15,7 @@ theme = "Steel"
       locale = "en-US"
       label = "English"
       subtitle = "A tabular, compact theme for Hugo."
+      description = "SEO meta description."
       copyright = "Name and surname; all rights reserved, subject to the first amendment to the agreement."
 
     [[languages.en.menus.main]]

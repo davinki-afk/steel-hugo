@@ -3,6 +3,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+    <link rel="icon" href="{{ "images/favicon.ico" | relURL }}" type="image/x-icon">
+    {{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with resources.Get "css/main.css" }}
       <link rel="stylesheet" href="{{ .RelPermalink }}">
     {{ end }}
