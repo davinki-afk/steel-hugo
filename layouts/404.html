@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <table class="content-layout" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td class="article-cell" width="565" valign="top">
+      <h1>404</h1>
+      <hr>
+      <div class="error-page">
+        <h2>{{ i18n "page_not_found" }}</h2>
+        <p>{{ i18n "page_not_found_description" }}</p>
+        <p><a href="{{ site.Home.RelPermalink }}">{{ i18n "back_to_home" }}</a></p>
+      </div>
+    </td>
+    <td class="sidebar-spacer" width="6">&nbsp;</td>
+    <td class="sidebar-cell" width="189" valign="top">{{ partial "sidebar.html" . }}</td>
+    </tr>
+  </table>
+{{ end }}

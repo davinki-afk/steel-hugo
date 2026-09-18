@@ -12,6 +12,12 @@ other = "There are no tags yet."
 other = "Categories"
 [no_categories]
 other = "There are no categories yet."
+[page_not_found]
+other = "Page not found"
+[page_not_found_description]
+other = "The page may have been moved, deleted, or the address may be incorrect."
+[back_to_home]
+other = "Back to homepage"
 [footer_first_column]
 other = "First column"
 [footer_second_column]
